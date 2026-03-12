@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <encoding>UTF-8</encoding>
+        <documentTitle>SauceDemo BDD Test Report</documentTitle>
+        <reportName>SauceDemo Selenium BDD</reportName>
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+        <css>
+            .brand-logo  { display: none; }
+            .nav-wrapper { background-color: #e84c1e !important; }
+        </css>
+    </configuration>
+</extentreports>

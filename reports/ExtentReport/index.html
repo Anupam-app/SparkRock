@@ -1,0 +1,1503 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>SauceDemo BDD Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css">
+.brand-logo { display: none; }
+.nav-wrapper { background-color: #e84c1e !important; }
+</style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">SauceDemo Selenium BDD</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 12, 2026 13:36:29</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@e2e</a><a class="dropdown-item" href="#">@checkout</a><a class="dropdown-item" href="#">@TC-03b</a><a class="dropdown-item" href="#">@TC-03c</a><a class="dropdown-item" href="#">@negative</a><a class="dropdown-item" href="#">@TC-03</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Checkout Process</p>
+            <p class="text-sm">
+              <span>1:36:30 PM</span> / <span>00:01:05:755</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Checkout Process</h5>
+<span class='badge badge-success'>03.12.2026 1:36:30 PM</span>
+<span class='badge badge-danger'>03.12.2026 1:37:36 PM</span>
+<span class='badge badge-default'>00:01:05:755</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a logged-in SauceDemo user
+I want to complete the full checkout process
+So that I can successfully place an order</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC-03 - Complete end-to-end checkout with a single product</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.saucedemo.steps.CartSteps.iAmLoggedIn(java.lang.String,java.lang.String)">
+                <span>Given I am logged in with username "standard_user" and password "secret_sauce"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.saucedemo.steps.CheckoutSteps.iHaveAddedProductToCart(java.lang.String)">
+                <span>Given I have added "Sauce Labs Backpack" to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded2.png' src="test-output/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.saucedemo.steps.CartSteps.iNavigateToCart()">
+                <span>When I navigate to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded3.png' src="test-output/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.saucedemo.steps.CheckoutSteps.iClickCheckoutButton()">
+                <span>And I click the Checkout button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "/cart.html". Current url: "https://www.saucedemo.com/inventory.html" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Testing\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50930}, goog:processID: 8384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50930/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a3382ec6042e4b9a2ebccbbb4e1b5f0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.saucedemo.utils.WaitUtils.waitForUrlContains(WaitUtils.java:43)
+	at com.saucedemo.pages.BasePage.assertUrlContains(BasePage.java:88)
+	at com.saucedemo.pages.CartPage.assertOnCartPage(CartPage.java:50)
+	at com.saucedemo.steps.CheckoutSteps.iClickCheckoutButton(CheckoutSteps.java:29)
+	at ✽.I click the Checkout button(file:///C:/Users/Testing/Documents/selenium-bdd-framework/Sparkrock_test/src/test/resources/features/checkout.feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.saucedemo.steps.CheckoutSteps.iEnterCheckoutInfo(java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I enter first name "John", last name "Doe", postal code "10001"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.saucedemo.steps.CheckoutSteps.iClickContinue()">
+                <span>And I click Continue</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.saucedemo.steps.CheckoutSteps.theOverviewPageShouldShow(java.lang.String)">
+                <span>Then the overview page should show "Sauce Labs Backpack"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.saucedemo.steps.CheckoutSteps.theOrderSummaryTotalsShouldBeVisible()">
+                <span>And the order summary totals should be visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.saucedemo.steps.CheckoutSteps.iClickFinish()">
+                <span>When I click Finish</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.saucedemo.steps.CheckoutSteps.theOrderConfirmationPageShouldBeDisplayed()">
+                <span>Then the order confirmation page should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.saucedemo.steps.CheckoutSteps.theConfirmationMessageShouldBe(java.lang.String)">
+                <span>And the confirmation message should be "Thank you for your order!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.saucedemo.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Failure Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded4.png' src="test-output/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log fail-bg mr-2">Fail</span>TC-03b - Checkout with various products</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>TC-03b - Checkout with various products</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am logged in with username "standard_user" and password "secret_sauce"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded5.png' src="test-output/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given I have added "Sauce Labs Bike Light" to the cart</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded6.png' src="test-output/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I navigate to the cart</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded7.png' src="test-output/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the Checkout button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded8.png' src="test-output/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter first name "Jane", last name "Smith", postal code "90210"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded9.png' src="test-output/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click Continue</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded10.png' src="test-output/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And I click Finish</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "/checkout-step-two.html". Current url: "https://www.saucedemo.com/checkout-step-one.html" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Testing\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50962}, goog:processID: 21832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50962/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3416e1a09bdb9ebc6e1085d33ac355d6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.saucedemo.utils.WaitUtils.waitForUrlContains(WaitUtils.java:43)
+	at com.saucedemo.pages.BasePage.assertUrlContains(BasePage.java:88)
+	at com.saucedemo.pages.CheckoutPage.assertOnOverview(CheckoutPage.java:116)
+	at com.saucedemo.steps.CheckoutSteps.iClickFinish(CheckoutSteps.java:45)
+	at ✽.I click Finish(file:///C:/Users/Testing/Documents/selenium-bdd-framework/Sparkrock_test/src/test/resources/features/checkout.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the order confirmation page should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And the confirmation message should be "Thank you for your order!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Failure Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded11.png' src="test-output/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="49"><span class="badge log fail-bg mr-2">Fail</span>TC-03b - Checkout with various products</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am logged in with username "standard_user" and password "secret_sauce"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded12.png' src="test-output/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given I have added "Sauce Labs Bolt T-Shirt" to the cart</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded13.png' src="test-output/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I navigate to the cart</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded14.png' src="test-output/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the Checkout button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded15.png' src="test-output/embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And I enter first name "Jane", last name "Smith", postal code "90210"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "/checkout-step-one.html". Current url: "https://www.saucedemo.com/cart.html" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Testing\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50994}, goog:processID: 24156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50994/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6388f34814f74dfaeed63cd63716c20d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.saucedemo.utils.WaitUtils.waitForUrlContains(WaitUtils.java:43)
+	at com.saucedemo.pages.BasePage.assertUrlContains(BasePage.java:88)
+	at com.saucedemo.pages.CheckoutPage.assertOnStepOne(CheckoutPage.java:111)
+	at com.saucedemo.steps.CheckoutSteps.iEnterCheckoutInfo(CheckoutSteps.java:34)
+	at ✽.I enter first name "Jane", last name "Smith", postal code "90210"(file:///C:/Users/Testing/Documents/selenium-bdd-framework/Sparkrock_test/src/test/resources/features/checkout.feature:28)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click Continue</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click Finish</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the order confirmation page should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And the confirmation message should be "Thank you for your order!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Failure Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded16.png' src="test-output/embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="70"><span class="badge log fail-bg mr-2">Fail</span>TC-03b - Checkout with various products</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am logged in with username "standard_user" and password "secret_sauce"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded17.png' src="test-output/embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given I have added "Sauce Labs Onesie" to the cart</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded18.png' src="test-output/embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I navigate to the cart</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded19.png' src="test-output/embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click the Checkout button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded20.png' src="test-output/embedded20.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And I enter first name "Jane", last name "Smith", postal code "90210"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "/checkout-step-one.html". Current url: "https://www.saucedemo.com/cart.html" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Testing\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51033}, goog:processID: 10008, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51033/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 588f64402031d90974f6bae40bece3ff
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.saucedemo.utils.WaitUtils.waitForUrlContains(WaitUtils.java:43)
+	at com.saucedemo.pages.BasePage.assertUrlContains(BasePage.java:88)
+	at com.saucedemo.pages.CheckoutPage.assertOnStepOne(CheckoutPage.java:111)
+	at com.saucedemo.steps.CheckoutSteps.iEnterCheckoutInfo(CheckoutSteps.java:34)
+	at ✽.I enter first name "Jane", last name "Smith", postal code "90210"(file:///C:/Users/Testing/Documents/selenium-bdd-framework/Sparkrock_test/src/test/resources/features/checkout.feature:28)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click Continue</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click Finish</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the order confirmation page should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And the confirmation message should be "Thank you for your order!"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.saucedemo.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Failure Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded21.png' src="test-output/embedded21.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="91"><span class="badge log fail-bg mr-2">Fail</span>TC-03c - Checkout fails when first name is missing</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.saucedemo.steps.CartSteps.iAmLoggedIn(java.lang.String,java.lang.String)">
+                <span>Given I am logged in with username "standard_user" and password "secret_sauce"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded22.png' src="test-output/embedded22.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.saucedemo.steps.CheckoutSteps.iHaveAddedProductToCart(java.lang.String)">
+                <span>Given I have added "Sauce Labs Backpack" to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded23.png' src="test-output/embedded23.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.saucedemo.steps.CartSteps.iNavigateToCart()">
+                <span>When I navigate to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded24.png' src="test-output/embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.saucedemo.steps.CheckoutSteps.iClickCheckoutButton()">
+                <span>And I click the Checkout button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded25.png' src="test-output/embedded25.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.saucedemo.steps.CheckoutSteps.iClickContinue()">
+                <span>And I click Continue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.saucedemo.hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>Step Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded26.png' src="test-output/embedded26.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.saucedemo.steps.CheckoutSteps.aCheckoutErrorShouldContain(java.lang.String)">
+                <span>Then a checkout error should contain "First Name is required"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [data-test='error']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.saucedemo.utils.WaitUtils.waitForVisible(WaitUtils.java:35)
+	at com.saucedemo.pages.BasePage.getText(BasePage.java:65)
+	at com.saucedemo.pages.CheckoutPage.assertStepOneError(CheckoutPage.java:156)
+	at com.saucedemo.steps.CheckoutSteps.aCheckoutErrorShouldContain(CheckoutSteps.java:72)
+	at ✽.a checkout error should contain "First Name is required"(file:///C:/Users/Testing/Documents/selenium-bdd-framework/Sparkrock_test/src/test/resources/features/checkout.feature:46)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19e6d40a432da798d32f1f9a960e6e1b, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Testing\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51067}, goog:processID: 21340, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51067/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19e6d40a432da798d32f1f9a960e6e1b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.saucedemo.utils.WaitUtils.waitForVisible(WaitUtils.java:35)
+	at com.saucedemo.pages.BasePage.getText(BasePage.java:65)
+	at com.saucedemo.pages.CheckoutPage.assertStepOneError(CheckoutPage.java:156)
+	at com.saucedemo.steps.CheckoutSteps.aCheckoutErrorShouldContain(CheckoutSteps.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.saucedemo.hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Failure Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded27.png' src="test-output/embedded27.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>And I click the Checkout button</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03 - Complete end-to-end checkout with a single product.And I click the Checkout button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>And I click Finish</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products.And I click Finish</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:37:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>And I enter first name "Jane", last name "Smith", postal code "90210"</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products.And I enter first name "Jane", last name "Smith", postal code "90210"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:37:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>And I enter first name "Jane", last name "Smith", postal code "90210"</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products.And I enter first name "Jane", last name "Smith", postal code "90210"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:37:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='103'>Then a checkout error should contain "First Name is required"</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03c - Checkout fails when first name is missing.Then a checkout error should contain "First Name is required"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC-03 - Complete end-to-end checkout with a single product</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03 - Complete end-to-end checkout with a single product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@e2e</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@e2e</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC-03 - Complete end-to-end checkout with a single product</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03 - Complete end-to-end checkout with a single product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@checkout</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@checkout</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC-03 - Complete end-to-end checkout with a single product</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03 - Complete end-to-end checkout with a single product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>TC-03b - Checkout with various products</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>TC-03b - Checkout with various products</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:37:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='70'>TC-03b - Checkout with various products</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:37:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>TC-03c - Checkout fails when first name is missing</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03c - Checkout fails when first name is missing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@TC-03b</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-03b</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>TC-03b - Checkout with various products</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>TC-03b - Checkout with various products</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:37:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='70'>TC-03b - Checkout with various products</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03b - Checkout with various products</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-03c</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-03c</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:37:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>TC-03c - Checkout fails when first name is missing</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03c - Checkout fails when first name is missing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@negative</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@negative</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:37:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>TC-03c - Checkout fails when first name is missing</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03c - Checkout fails when first name is missing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-03</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:36:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC-03 - Complete end-to-end checkout with a single product</a>
+<div class="">
+<span class="badge badge-default">Checkout Process.TC-03 - Complete end-to-end checkout with a single product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 12, 2026 13:36:29</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 12, 2026 13:37:36</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>5</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='69%'><b>49</b> steps passed</small></div>
+<div>
+<small data-tooltip='7%'><b>5</b> steps failed,
+<b>17</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Checkout Process":65.755
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@smoke</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@e2e</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@checkout</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-03b</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-03c</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@negative</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-03</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 5,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 49,
+failGrandChild: 5,
+warningGrandChild: 0,
+skipGrandChild: 17,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

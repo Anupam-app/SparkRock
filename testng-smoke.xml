@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Smoke Suite" verbose="1">
+
+    <parameter name="browser"  value="chrome"/>
+    <parameter name="headless" value="true"/>
+    <parameter name="baseUrl"  value="https://www.saucedemo.com"/>
+
+    <test name="Smoke Scenarios">
+        <classes>
+            <class name="com.saucedemo.runners.SmokeRunner"/>
+        </classes>
+    </test>
+
+</suite>
